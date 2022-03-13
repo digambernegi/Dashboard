@@ -1,0 +1,72 @@
+.single{
+    display: flex;
+    width: 100%;
+
+}
+.singlecontainer{
+    flex: 6;
+}
+.singletop{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.single .singlebottom{
+padding: 20px;
+}
+.single .singleTitle{
+    font-size: 16px;
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+.singleItem{
+    display: flex;
+}
+.singleleft{
+    position: relative;
+    flex: 1;
+    border: 1px solid lightgray;
+    padding:0 20px;
+}
+
+.edit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: thistle;
+}
+.singleimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.persondetails {
+    margin-left: 20px;
+}
+.persondetails .personTitle{
+margin: 0;
+color: #555;
+}
+
+.detailsItem{
+    margin-bottom: 10px;
+    font-style: 14px;
+}
+.itemKey{
+font-weight: bold;
+columns: gray;
+margin-right: 10px;
+}
+
+.itemValue{
+font-weight: 300;
+}
+
+.singlecenter{
+    flex: 2;
+
+}

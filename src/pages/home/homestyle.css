@@ -1,0 +1,31 @@
+.home{
+    display: flex;
+    height: 100vh;
+}
+
+.homecontainer{
+    flex: 6;
+    overflow: scroll;
+}
+
+.widgetcontainer,.charts{
+display: flex;
+padding: 20px;
+gap: 20px;
+}
+
+.charts{
+    padding: 0px 20px;
+}
+
+.tablecontainer{
+    display: flex;
+    flex-direction: column;
+margin: 20px;
+}
+
+.tableTitle{
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 15px;
+}

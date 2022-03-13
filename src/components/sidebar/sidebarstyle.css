@@ -1,0 +1,87 @@
+.sidebar {
+  flex: 1;
+  background-color: #161a27;
+}
+
+.sidebar .top {
+  height: 60px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgb(31, 35, 48);
+
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  width: 100%;
+  filter: invert(1);
+}
+
+.center {
+  padding: 20px 0;
+}
+
+.center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center ul li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
+.sidebaricon{
+    color: rgb(235, 233, 233);
+}
+
+.center ul li:hover {
+  border-left: 10px solid #1093FF;
+  transition: all 0.3s ease-in-out;
+}
+
+.center ul li:hover{
+    background-color: rgba(255, 255, 255, 0.493);
+    color: black;
+}
+
+.center span {
+  font-size: 13px;
+  font-weight: 600;
+  color: lightgray;
+  margin: 0 0 0 15px;
+}
+
+.sidebarBottom {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  flex-direction: row;
+}
+
+
+.sidebarBottom .mode {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1.5px solid lightgray;
+  cursor: pointer;
+  margin: 10px;
+}
+.mode:nth-child(1) {
+  background-color: white
+}
+
+.mode:nth-child(2) {
+  background-color: #333;
+}
+
+.user{
+    margin-top: 3em;
+}

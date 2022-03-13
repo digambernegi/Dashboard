@@ -1,0 +1,36 @@
+.table {
+  flex: 1;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.productimgwrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+.productimgwrapper .image {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.tableCell {
+
+}
+
+.status.approved {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(89, 238, 89);
+  color: white;
+}
+
+.status.pending {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(238, 216, 89);
+  color: white;
+}
