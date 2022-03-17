@@ -17,8 +17,8 @@ const Feature = () => {
         <div className="bottomchart">
           <CircularProgressbar
             className="progress"
-            value={65}
-            text={"65%"}
+            value={70}
+            text={"70%"}
             strokeWidth={7}
           />
           <p className="subTitle">Total sales made today</p>

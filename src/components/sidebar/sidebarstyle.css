@@ -1,15 +1,18 @@
 .sidebar {
   flex: 1;
   background-color: #161a27;
+  position: sticky;
+  left: 0;
+  height: 100vh;
 }
 
 .sidebar .top {
   height: 60px;
   display: flex;
   padding-left: 20px;
+  justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgb(31, 35, 48);
-
 }
 
 .logo {
@@ -17,6 +20,10 @@
   font-weight: 600;
   height: 40px;
   width: 100%;
+}
+
+.logo:hover{
+  transition: all .3s ease-in-out;
   filter: invert(1);
 }
 
@@ -37,18 +44,18 @@
   justify-content: flex-start;
   padding: 10px 20px;
 }
-.sidebaricon{
-    color: rgb(235, 233, 233);
+.sidebaricon {
+  color: rgb(235, 233, 233);
 }
 
 .center ul li:hover {
-  border-left: 10px solid #1093FF;
+  border-left: 10px solid #1093ff;
   transition: all 0.3s ease-in-out;
 }
 
-.center ul li:hover{
-    background-color: rgba(255, 255, 255, 0.493);
-    color: black;
+.center ul li:hover {
+  background-color: rgba(255, 255, 255, 0.493);
+  color: black;
 }
 
 .center span {
@@ -65,7 +72,6 @@
   flex-direction: row;
 }
 
-
 .sidebarBottom .mode {
   width: 20px;
   height: 20px;
@@ -75,13 +81,13 @@
   margin: 10px;
 }
 .mode:nth-child(1) {
-  background-color: white
+  background-color: white;
 }
 
 .mode:nth-child(2) {
   background-color: #333;
 }
 
-.user{
-    margin-top: 3em;
+.user {
+  margin-top: 3em;
 }

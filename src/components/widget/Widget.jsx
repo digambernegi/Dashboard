@@ -21,7 +21,7 @@ export default function Widget({ type }) {
         icon: (
           <PersonRoundedIcon
             className="wicon"
-            style={{ background: "#d3d3d333", color: "white" }}
+            style={{color: "white" }}
           />
         ),
         status: "positive",
@@ -37,7 +37,7 @@ export default function Widget({ type }) {
         icon: (
           <ShoppingCartRoundedIcon
             className="wicon"
-            style={{ background: "#d3d3d333", color: "white" }}
+            style={{color: "white" }}
           />
         ),
         status: "negative",
@@ -53,7 +53,7 @@ export default function Widget({ type }) {
         icon: (
           <AttachMoneyRoundedIcon
             className="wicon"
-            style={{ background: "#d3d3d333", color: "white" }}
+            style={{color: "white" }}
           />
         ),
         status: "positive",
@@ -69,7 +69,7 @@ export default function Widget({ type }) {
         icon: (
           <AccountBalanceWalletRoundedIcon
             className="wicon"
-            style={{ background: "#d3d3d333", color: "white" }}
+            style={{color: "white" }}
           />
         ),
         status: "positive",
@@ -97,9 +97,9 @@ export default function Widget({ type }) {
       <div className="right">
         <div className={`percentage ${data.status}`}>
           {data.status === "positive" ? (
-            <ArrowDropUpRoundedIcon style={{background:'#d3d3d333', borderRadius:'5px', padding:'5px'}}/> 
+            <ArrowDropUpRoundedIcon style={{color:'white', background:'#ffffff4d', borderRadius:'5px', padding:'5px'}}/> 
           ) : (
-            <ArrowDropDownRoundedIcon style={{background:'#d3d3d333', borderRadius:'5px', padding:'5px'}}/>
+            <ArrowDropDownRoundedIcon style={{color:'white', background:'#ffffff4d', borderRadius:'5px', padding:'5px'}}/>
           )}
         </div>
         {data.icon}

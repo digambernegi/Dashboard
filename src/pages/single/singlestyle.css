@@ -1,72 +1,96 @@
-.single{
-    display: flex;
-    width: 100%;
+.single {
+  display: flex;
+  height: 100vh;
+}
+.singlecontainer {
+  flex: 6;
+  overflow-y: scroll;
+}
+.singletop {
+  overflow-y: scroll;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
 
 }
-.singlecontainer{
-    flex: 6;
-}
-.singletop{
-    padding: 20px;
-    display: flex;
-    gap: 20px;
+.singlecontainer::-webkit-scrollbar {
+  scrollbar-width: none;
+  display: none;
 }
 
-.single .singlebottom{
-padding: 20px;
-}
-.single .singleTitle{
-    font-size: 16px;
-    color: lightgray;
-    margin-bottom: 20px;
+
+.single .singlebottom {
+  padding: 20px;
 }
 
-.singleItem{
-    display: flex;
-}
-.singleleft{
-    position: relative;
-    flex: 1;
-    border: 1px solid lightgray;
-    padding:0 20px;
+.single .singleTitle {
+  font-size: 16px;
+  color: lightgray;
+  margin-bottom: 20px;
 }
 
-.edit{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    background-color: thistle;
+.singleItem {
+  display: flex;
 }
-.singleimg{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+.singleleft {
+  position: relative;
+  flex: 1;
+  box-shadow: 0px 1px 4px 0px rgba(211, 211, 211, 0.473);
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  background-color: thistle;
+  color: grey;
+  border-radius: 0 5px 0 5px;
+  cursor: pointer;
+}
+
+.edit:hover{
+    color: white;
+    transition: all .3s ease-in-out;
+}
+.singleimg {
+  box-shadow: 0px 1px 4px 0px rgba(211, 211, 211, 0.473);
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 .persondetails {
-    margin-left: 20px;
-}
-.persondetails .personTitle{
-margin: 0;
-color: #555;
-}
-
-.detailsItem{
-    margin-bottom: 10px;
-    font-style: 14px;
+  margin-left: 20px;
+  padding: 0 5px;
 }
 .itemKey{
-font-weight: bold;
-columns: gray;
-margin-right: 10px;
+    color: grey;
 }
 
-.itemValue{
-font-weight: 300;
+.persondetails .personTitle {
+  padding-bottom: 10px;
+  margin: 0;
+  color: #555;
 }
 
-.singlecenter{
-    flex: 2;
-
+.detailsItem {
+  margin-bottom: 10px;
+  font-style: 14px;
 }
+.itemKey {
+  font-weight: bold;
+  columns: gray;
+  margin-right: 10px;
+}
+
+.itemValue {
+    font-size: 15px;
+}
+
+.singlecenter {
+  flex: 2;
+}
+

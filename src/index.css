@@ -12,3 +12,12 @@ code {
   monospace;
 }
 
+body::-webkit-scrollbar {
+  scrollbar-width: none;
+  display: none;
+}
+
+.homecontainer::-webkit-scrollbar {
+  scrollbar-width: none;
+  display: none;
+}

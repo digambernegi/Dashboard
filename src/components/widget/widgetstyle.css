@@ -7,7 +7,7 @@
   background: #d3d3d333;
   color: white;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px 0px rgba(211, 211, 211, 0.473);
+  box-shadow: 0px 2px 4px 0px rgba(211, 211, 211, 0.473);
 
 }
 
@@ -39,19 +39,19 @@
 }
 
 .widget.USERS {
-  background-color: #7097ef;
+  background-color: #7f9af5;
   color: white;
 }
 .widget.ORDER {
-  background-color: #dd6767;
+  background-color: #FC4F4F;
   color: white;
 }
 .widget.EARNING {
-  background-color: #6bdd67;
+  background-color: #60cf6fdc;
   color: white;
 }
 .widget.BALANCE {
-  background-color: #67cbdd;
+  background-color: #434f77d0;
   color: white;
 }
 

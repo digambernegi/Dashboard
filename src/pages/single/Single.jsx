@@ -19,37 +19,44 @@ function Single() {
             <div className="singleItem">
               <img
                 className="singleimg"
-                src="https://static.bangkokpost.com/media/content/20200619/c1_1937552_200619122619.jpg"
+                src="https://img.freepik.com/free-photo/young-woman-with-round-glasses-yellow-sweater_273609-7091.jpg?size=626&ext=jpg"
                 alt="personimg"
               />
               <div className="persondetails">
-                <h1 className="personTitle">Hogn won</h1>
+                <h1 className="personTitle">Sophie Tracy</h1>
                 <div className="detailsItem">
                   <span className="itemKey">Email:</span>
-                  <span className="itemValue">Hongnwon@gmail.com:</span>
+                  <span className="itemValue">Sophie@gmail.com</span>
                   </div>
 
                   <div className="detailsItem">
                   <span className="itemKey">Phone:</span>
-                  <span className="itemValue">1111111111</span>
+                  <span className="itemValue">+12163547758</span>
                   </div>
 
                   <div className="detailsItem">
                   <span className="itemKey">Address:</span>
-                  <span className="itemValue">djsfjsdnkjs:</span>
+                  <span className="itemValue">A-11, 5th floor, City Vista</span>
                   </div>
 
                   <div className="detailsItem">
                   <span className="itemKey">Country:</span>
                   <span className="itemValue">US</span>
                   </div>
+
+                  <button className="block">Block</button>
                 </div>
+
             </div>
+
           </div>
+
         <div className="singlecenter">
           <Chart aspect={3/1} title={'User Spending (last 6 months)'}/>
           </div>
+
         </div>
+
         <div className="singlebottom">
           <List/>
           </div>

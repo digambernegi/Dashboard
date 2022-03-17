@@ -1,63 +1,96 @@
-.datatable{
-    padding: 20px;
+.datatable {
+  padding: 20px;
+  overflow-y: scroll;
+}
+.datatableTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 10px;
+}
+.userGrid{
+  height: 500px;
+  width: 100%;
 }
 
-.cellwithimg{
-    display: flex;
-    align-items: center;
-
-}
-.cellimg{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 15px;
+.datatableTitle .link{
+  color: rgb(41, 187, 41);
+  font-size: 15px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  color: grey;
+  font-weight: bold;
 }
 
-.cellwithstatus
-{
-    display: flex;
+.cellwithimg {
+  display: flex;
+  align-items: center;
+}
+.cellimg {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeSmall.MuiDataGrid-menuIconButton.css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+  border-radius: 0px;
 }
 
-.cellstatus.active{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: rgb(89, 238, 89);
-    color: white;
+.cellwithstatus {
+  display: flex;
+  text-align: center;
 }
 
-.cellstatus.pending{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: rgb(238, 216, 89);
-    color: white;
+.cellstatus.active {
+  border-radius: 5px;
+  padding: 5px;
+  color: #0bff0296;
 }
 
-.cellstatus.passive{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: rgb(243, 98, 98);
-    color: white;
+.cellstatus.pending,.cellstatus.passive{
+  border-radius: 5px;
+  padding: 5px;
+  color: #d3d3d3;
 }
 
-.cellAction{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.cellstatus.passive {
+  color: #f36262;
 }
 
-.viewButton{
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    background-color: lightblue;
+.cellAction {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.deleteButton{
-    border: 1px solid white;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    background-color: rgb(243, 98, 98);
+
+.viewButton,.deleteButton {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  width: fit-content;
+  color: white;
+  background-color: lightblue;
+}
+.deleteButton {
+  background-color: #f36262;
+}
+
+.dg.MuiDataGrid-root.css-1fajery-MuiDataGrid-root{
+border: none;
+box-shadow: 0px 1px 10px 0px rgba(211, 211, 211, 0.473);
+}
+
+.dg.MuiDataGrid-root.css-1fajery-MuiDataGrid-root::-webkit-scrollbar {
+  scrollbar-width: none;
+  display: none;
+}
+
+.MuiPaper-roo.MuiPaper-elevatio .MuiPaper-rounded .MuiPaper-elevation1 .MuiTableContainer-root .table .css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+  background-color: red;
 }

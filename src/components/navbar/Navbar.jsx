@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./navbarstyle.css";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
@@ -6,8 +6,12 @@ import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import FullscreenExitRoundedIcon from "@mui/icons-material/FullscreenExitRounded";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 import InboxRoundedIcon from "@mui/icons-material/InboxRounded";
+import { DarkModeContext } from "../../context/darkModeContext";
+
 
 const Navbar = () => {
+  const {dispatch}=useContext(DarkModeContext)
+
   return (
     <div className="navbar">
       <div className="navbarwrapper">
@@ -21,7 +25,7 @@ const Navbar = () => {
             <span className="language"> English(US)</span>
           </div>
           <div className="item">
-            <DarkModeRoundedIcon className="navbaricon" />
+            <DarkModeRoundedIcon className="navbaricon" onClick={() => dispatch({type:'TOGGLE'})}/>
           </div>
 
           <div className="item">
@@ -40,7 +44,7 @@ const Navbar = () => {
           <div className="item removebg">
             <img
               className="avatar"
-              src="https://www.bkacontent.com/wp-content/uploads/2020/10/Depositphotos_336730000_l-2015.jpg"
+              src="https://i0.hippopx.com/photos/475/75/706/suit-sufi-blue-business-preview.jpg"
               alt=""
             />
           </div>

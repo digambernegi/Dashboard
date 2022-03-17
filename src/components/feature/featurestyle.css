@@ -1,6 +1,6 @@
 .feature {
   flex: 2;
-  box-shadow: 0px 0px 4px 0px rgba(211, 211, 211, 0.473);
+  box-shadow: 0px 1px 4px 0px rgba(211, 211, 211, 0.473);
   border-radius: 10px;
 }
 
@@ -23,13 +23,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .progress {
   height: 120px;
   width: 120px;
-  
 }
 .icon {
   cursor: pointer;
@@ -42,7 +41,8 @@
   display: block;
 }
 
-.bottomchart .amount,.subTitle{
+.bottomchart .amount,
+.subTitle {
   font-size: 16px;
   font-weight: 500;
 }
@@ -50,28 +50,32 @@
   font-size: 12px;
   color: grey;
   font-weight: 300;
-  border: 1px solid red;
-
 }
 
 .summary {
-  display: flex;
   width: 100%;
-  object-fit: contain;
-  justify-content: space-between;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .summary .item {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: column-reverse;
   text-align: center;
   font-size: 12px;
-  color: gray; 
+  width: max-content;
+  padding: 0 15px;
+  justify-content: space-around;
+  color: gray;
 }
 
 .item .itemTitle {
   font-size: 14px;
+  width: max-content;
 }
+
 .itemResult {
   display: flex;
   margin-top: 10px;
@@ -85,4 +89,8 @@
 }
 .itemResult.negative {
   color: red;
+}
+
+.bottomchart p {
+  margin: 10px 0;
 }

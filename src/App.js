@@ -6,10 +6,14 @@ import List from "./pages/list/List.jsx";
 import { Routes, Route } from "react-router-dom";
 import {userInputs,productInputs} from './formData';
 import './style/global.css'
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext.js";
 
 function App() {
+  const {darkMode}=useContext(DarkModeContext)
+
   return (
-    <div className="app">
+    <div className={darkMode? 'app dark' : 'app'}>
       <Routes>
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} />
