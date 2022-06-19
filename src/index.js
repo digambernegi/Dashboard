@@ -1,15 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import './index.css';
-import App from './App';
-import { DarkModeProvider } from './context/darkModeContext';
+import "./index.css";
+import App from "./App";
+import { DarkModeProvider } from "./context/darkModeContext";
+import { AuthContextProvider } from "./context/AuthContext";
 
 ReactDOM.render(
-  <BrowserRouter>
-  <DarkModeProvider>
-    <App />
-  </DarkModeProvider>
-  </BrowserRouter>,
-  document.getElementById('root')
+    <DarkModeProvider>
+      <AuthContextProvider>
+        <App />
+      </AuthContextProvider>
+    </DarkModeProvider>,
+  document.getElementById("root")
 );
